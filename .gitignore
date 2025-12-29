@@ -1,0 +1,13 @@
+# Windows system files
+Thumbs.db
+
+# Node/npm (if you add build tools later)
+node_modules/
+package-lock.json
+
+# IDE settings
+.vscode/
+.idea/
+
+# Extension specific
+*.pem

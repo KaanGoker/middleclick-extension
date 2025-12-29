@@ -1,0 +1,21 @@
+{
+  "name": "MiddleClick+",
+  "version": "1.0",
+  "manifest_version": 3,
+  "description": "Middle click option for all clickables. Adds right click options for 'Open in New Tab' and 'Open in New Window'.",
+  "permissions": ["contextMenus", "tabs"],
+  "icons": {
+    "16": "icons/logo.png",
+    "48": "icons/logo.png",
+    "128": "icons/logo.png"
+  },
+  "background": { "service_worker": "background.js" },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_start",
+      "all_frames": true
+    }
+  ]
+}
